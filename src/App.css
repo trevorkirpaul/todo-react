@@ -1,12 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+
 .App {
   padding: 15px;
   margin: 0 auto;
   max-width: 1000px;
-  background-color: #EDF2F4;
+  background-color: #303633;
   min-height: 100vh;
 }
 
 .App form {
   width: 80%;
   margin: 0 auto;
+}
+
+.App form input {
+  width: 80%;
+  height: 50px;
+
+  border: 1px solid #8BE8CB;
+  background-color: #303633;
+  color: #8BE8CB;
+
+  padding: 10px;
+  
+  font-family: 'Oxygen', sans-serif;
+  font-size: 150%;
+  font-weight: 700;
+}
+
+.App form button {
+  width: 20%;
+  height: 50px;
+
+  border: 1px solid #8BE8CB;
+  background-color: #303633;
+  color: #8BE8CB;
+  padding: 0px;
+  
+  font-family: 'Oxygen', sans-serif;
+  font-size: 150%;
+  font-weight: 700;
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.App form button:hover {
+  background-color: #8BE8CB;
+  color: #303633;
+}
+
+/* END INPUT/HEADER Styling */
+
+.App ul {
+  width: 80%;
+  margin: 25px auto;
+
+  list-style: none;
+}
+
+.App ul li {
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #8BE8CB;
+  color: #8BE8CB;
+  font-family: 'Oxygen', sans-serif;
+
 }

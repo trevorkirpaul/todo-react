@@ -19,11 +19,18 @@ class App extends Component {
 
   onSubmit = event => {
     event.preventDefault();
-    this.setState({
-      task: '',
-      list: [...this.state.list, this.state.task]
-    });
+
+    if (this.state.task !== '') {
+      this.setState({
+        task: '',
+        list: [...this.state.list, this.state.task]
+      });
+    } else {
+      alert('You must enter a task to add a task!');
+    }
   }
+
+
 
   render() {  
     return (
@@ -32,7 +39,7 @@ class App extends Component {
 
         <form onSubmit={this.onSubmit}>
           <input value={this.state.task} onChange={this.onChange} />
-          <button>Add Task</button>
+          <button>Add</button>
         </form>
 
         <List items={this.state.list}/>
